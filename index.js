@@ -24,6 +24,12 @@ MongoClient.connect('mongodb://localhost:27017', function (err, client) {
 });
 
 app.get("/",(req, res) => {
+    res.render("inicio", {
+       
+    })
+});
+
+app.get("/tienda/",(req, res) => {
 
     var productos = db.collection('productos').find();
 
@@ -76,16 +82,17 @@ app.get('/checkout', (req, res) => {
     res.render('checkout');
 });
 
-app.get('/tienda', (req, res) => {
-    res.render('tienda');
+app.get('/inicio', (req, res) => {
+    res.render('inicio');
 });
 
 app.get('/modelado', (req, res) => {
     res.render('modelado');
 });
 
-app.get('/inicio', (req, res) => {
+app.get('/tienda', (req, res) => {
     res.render('index');
+    
 });
 
 
