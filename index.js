@@ -15,12 +15,20 @@ app.set('view engine', 'hbs');
 
 app.use(express.static('public'));
 
-MongoClient.connect('mongodb://localhost:27017', function (err, client) {
+MongoClient.connect('mongodb+srv://cluster0-3aqrt.mongodb.net/fidget',{
+    auth: {
+        user: 'oscar',
+        password: 'losdiablosrojos1878'
+    }
+},
+function(err, client){
     if (err) throw err;
 
     db = client.db('fidget');
 
-    app.listen(3000);
+    app.listen(process.env.PORT || 3000);
+
+    
 });
 
 app.get("/",(req, res) => {
