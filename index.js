@@ -28,6 +28,7 @@ app.get("/",(req, res) => {
        
     })
 });
+var a;
 
 app.get("/tienda/",(req, res) => {
 
