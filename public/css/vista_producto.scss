@@ -1,0 +1,182 @@
+$pink: #B83664;
+$gray: #DDDDDD;
+$green: #82BB57;
+$blue: #71CAFB;
+$yellow: #F8CA5F;
+$black: #4D4D4D;
+$fuente_titulo: 'Roboto',
+sans-serif;
+$fuente_parrafo: 'Open Sans Condensed',
+sans-serif;
+$color_primario: #00DCBC;
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+h4{
+    position: absolute;
+    right: 150px;
+    top: 15px;
+    z-index: 1000;
+    font: 15px $fuente_titulo;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.visualizacionProducto{
+
+    width: 100%;
+    height: 100%;
+    display: flex; 
+ 
+
+    .info {
+        
+        width: 50%;
+        margin-top: 240px;
+        margin-left: 200px; 
+        
+        .cuadrados{
+
+            .cuadradoUno{
+                width: 100px; 
+                height: 100px; 
+                background: $yellow;
+                position: absolute;
+                top:300px;
+                left: 120px; 
+                opacity: 0.48;
+                z-index: -1000000;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+            }
+
+            .cuadradoDos{
+                width: 50px; 
+                height: 50px; 
+                background: $green;
+                position: absolute;
+                top:460px;
+                left: 420px; 
+                opacity: 0.48;
+                z-index: -1000000;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); 
+            }
+
+            .cuadradoTres{
+                width: 150px; 
+                height: 150px; 
+                background: $blue;
+                position: absolute;
+                top:150px;
+                left: 560px; 
+                opacity: 0.48;
+                z-index: -1000000;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); 
+            }
+
+            .cuadradoCuatro{
+                width: 200px; 
+                height: 200px; 
+                background: $pink;
+                position: absolute;
+                top:650px;
+                left: -20px; 
+                opacity: 0.48;
+                z-index: -1000000;
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg); 
+            }
+        }
+
+        h1{
+        font: 25px $fuente_titulo;
+        text-transform: uppercase;
+        margin-bottom: 30px; 
+        }
+
+        p{
+            width: 50%;
+            text-align: justify;
+            font: 15px $fuente_parrafo;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: $color_primario;
+            margin-top: 40px;
+            margin-left: 45px; 
+            color: white;
+            border-radius: 10px;
+            border: solid 0px blue;
+            height: 40px;
+            padding: 5px 40px 5px 40px;
+            font: 15px $fuente_parrafo;
+            text-align: center;
+        }    
+        
+    }
+
+    .imagen{
+        width: 50%;
+        margin-top: 80px;
+        
+        h1{
+
+            font: 70px $fuente_parrafo;
+            color: white;
+            opacity: 0.48;
+            text-align: justify;
+        }
+        img{
+            position: absolute;
+            top:170px;
+            left: 570px;
+            width: 500px;
+        }
+    }
+}
+
+
+[color~="Amarillo"] {
+    background: $yellow;
+}
+
+[color~="Azul"] {
+    background: $blue;   
+}
+
+[color~="Rosa"] {
+    background: $pink;
+}
+
+[color~="Negro"] {
+    background: $black;
+}
+
+[color~="Gris"] {
+    background: $gray;
+}
+
+[color~="Verde"] {
+    background: $green; 
+}

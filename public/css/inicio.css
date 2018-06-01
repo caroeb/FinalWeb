@@ -1,0 +1,231 @@
+h4 {
+  position: absolute;
+  right: 150px;
+  top: 15px;
+  z-index: 1000;
+  font: 15px "Roboto", sans-serif;
+}
+
+.sorters {
+  position: fixed;
+  background: #eee;
+  width: 18%;
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 40px;
+  float: left;
+}
+
+.sorters h3 {
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #666;
+  width: 70%;
+  background: #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+  box-sizing: content-box;
+  border: 2px #aaa solid;
+}
+
+.sorters .sortBy {
+  width: 80%;
+}
+
+.sorters .sortBy h3 {
+  background: white;
+  width: 85%;
+  box-sizing: content-box;
+}
+
+.sorters .colorSort {
+  margin-top: 10px;
+}
+
+.sorters .colorSort .colors {
+  width: 100%;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 1px;
+}
+
+.sorters .colorSort .colors .selectorColor {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  flex-direction: column;
+  margin: 5px;
+}
+
+.sorters .colorSort .colors .amarillo {
+  background: #F8CA5F;
+}
+
+.sorters .colorSort .colors .rosa {
+  background: #B83664;
+}
+
+.sorters .colorSort .colors .gris {
+  background: #DDDDDD;
+}
+
+.sorters .colorSort .colors .negro {
+  background: #4D4D4D;
+}
+
+.sorters .colorSort .colors .azul {
+  background: #71CAFB;
+}
+
+.sorters .colorSort .colors .verde {
+  background: #82BB57;
+}
+
+.sorters h2 {
+  cursor: pointer;
+  color: #4D4D4D;
+}
+
+.sorters .priceSort {
+  font: 10px "Roboto", sans-serif;
+}
+
+.sorters .priceSort h3 {
+  margin-bottom: 10px;
+}
+
+.sorters .priceSort a {
+  padding: 14px;
+  margin-left: 15px;
+}
+
+.sorters .sideSort {
+  font: 17px "Roboto", sans-serif;
+}
+
+.sorters .sideSort h3 {
+  margin-bottom: 10px;
+}
+
+.sorters .sideSort a {
+  height: 80%;
+  margin-left: 15px;
+  margin-top: 15px;
+  width: 50px;
+  height: 50px;
+  background: #aaa;
+  display: inline-block;
+}
+
+.sorters .sideSort h2 {
+  width: 80%;
+  margin-top: 12px;
+  margin-left: 5px;
+  text-align: center;
+  background: #aaa;
+}
+
+.productosContainer {
+  margin-left: 20%;
+}
+
+.productosContainer .productoContainer {
+  display: inline-block;
+  margin-top: 150px;
+  margin-bottom: -150px;
+}
+
+.productosContainer .productoContainer .producto {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-left: 170px;
+}
+
+.productosContainer .productoContainer .producto img {
+  height: 200px;
+}
+
+.productosContainer .productoContainer .producto button {
+  cursor: pointer;
+  background-color: #00DCBC;
+  margin: 20px 0 20px 0;
+  color: white;
+  border-radius: 10px;
+  border: solid 0px blue;
+  height: 40px;
+  font-size: 20px;
+}
+
+[color~="Amarillo"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #F8CA5F;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Azul"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #71CAFB;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Rosa"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #B83664;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Negro"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #4D4D4D;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Gris"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #DDDDDD;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+
+[color~="Verde"]:before {
+  content: "";
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  background: #82BB57;
+  transform: translateX(-37px) translateY(20px) rotate(45deg);
+  opacity: 0.48;
+  z-index: -1;
+}
+/*# sourceMappingURL=inicio.css.map */
