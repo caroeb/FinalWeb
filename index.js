@@ -80,6 +80,15 @@ app.get('/tienda', (req, res) => {
     res.render('tienda');
 });
 
+app.get('/modelado', (req, res) => {
+    res.render('modelado');
+});
+
+app.get('/inicio', (req, res) => {
+    res.render('index');
+});
+
+
 app.get('/productosPorIds', (req, res) => {
     console.log(req.query.ids);
     var arreglo = req.query.ids.split(',');

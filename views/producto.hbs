@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/css/nav.css">
+    <link rel="stylesheet" type="text/css" href="/css/vista_producto.css">
+    <title>{{fidget.name}}</title>
+</head>
+<header>
+    <h4><span class="carrito">0</span></h4>
+    <div class="nav">
+        <a href="" class="home">
+            <img src="/img/logo.png" width="150px" alt="">
+        </a>
+
+        <a href="" class="menu">Fidget Cubes</a>
+        <a href="" class="menu">Fidget Spinners</a>
+        <a href="" class="menu">Shop</a>
+        <a href="" class="menu">Contact Us</a>
+
+        <a href="" class="carro">
+            <img src="/img/iconocar.png" width="40px" alt="">
+        </a>
+    </div>
+</header>
+
+<body>
+
+    <div class="visualizacionProducto">
+        <div class="info">
+            
+            <h1>{{fidget.name}}</h1>
+            
+            <p><b>Price:</b>&nbsp;${{fidget.precio}}</p>
+            <p><b>Color:</b>&nbsp;{{fidget.color}}</p>
+            <p><b>Sides:</b>&nbsp;{{fidget.lados}}</p>
+            <p><b>Weight:</b>&nbsp;{{fidget.peso}}</p>
+            <p><b>Size:</b>&nbsp;{{fidget.tamano}}</p></br>
+            <p>{{fidget.descripcion}}</p>
+        
+            <button class="agregar">ADD TO CAR</button>
+            
+            <div class="cuadrados">
+              <div class="cuadradoUno"></div>
+              <div class="cuadradoDos"></div>
+              <div class="cuadradoTres"></div>
+              <div class="cuadradoCuatro"></div>  
+            </div>
+
+        </div>
+        
+        <div class="imagen" color="{{fidget.color}}">
+            <h1><b>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>DGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>GET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGET•FIDGET•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br>FIDGET•FIDGET•FIDGET•FIDGE•FIDGE•</br></b></h1>
+            <img src="{{fidget.image}}" alt=""> 
+            
+        </div>
+    </div>
+
+    <script src="js/cliente.js"></script>
+    <script src="js/productosfidget.js"></script>
+</body>
+
+</html>
