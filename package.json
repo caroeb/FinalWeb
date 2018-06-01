@@ -1,0 +1,25 @@
+{
+  "name": "finalweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "^4.16.3",
+    "handlebars": "^4.0.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caroeb/FinalWeb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/caroeb/FinalWeb/issues"
+  },
+  "homepage": "https://github.com/caroeb/FinalWeb#readme",
+  "devDependencies": {}
+}

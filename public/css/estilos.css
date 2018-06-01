@@ -1,0 +1,621 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  background: #DDDD;
+  width: 100%;
+  height: 10%;
+  margin: auto;
+  text-align: center;
+}
+
+header .nav {
+  width: 80%;
+  height: 100%;
+  display: inline-flex;
+  align-content: stretch;
+  justify-content: space-between;
+}
+
+header .nav a {
+  text-decoration: none;
+}
+
+header .nav .home {
+  display: flex;
+}
+
+header .nav .menu {
+  position: relative;
+  top: 30px;
+  font: 20px "Roboto", sans-serif;
+  color: #4D4D4D;
+}
+
+header .nav .carrito {
+  position: relative;
+  top: 20px;
+}
+
+.col {
+  width: 100%;
+  display: flex;
+}
+
+.col .col1 {
+  background: white;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  text-align: justify;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.col .top {
+  height: 10%;
+}
+
+.col .top .titulo {
+  font: 50px "Roboto", sans-serif;
+}
+
+.col .descripcion {
+  height: 30%;
+  width: 50%;
+  background: white;
+  text-align: center;
+  padding-left: 170px;
+  padding-top: 100px;
+}
+
+.col h1 {
+  padding-bottom: 30px;
+  color: black;
+  font: 30px "Roboto", sans-serif;
+  width: 80%;
+  position: relative;
+  margin: auto;
+}
+
+.col p {
+  font: 20px "Open Sans Condensed", sans-serif;
+  text-align: justify;
+}
+
+.col button {
+  font: 15px "Roboto", sans-serif;
+  color: white;
+  background-color: #00DCBC;
+  border-radius: 6px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+  padding-left: 15px;
+  border: 0px;
+  float: left;
+  margin-top: 30px;
+}
+
+.col .col2 {
+  background: white;
+  width: 50%;
+  height: 100%;
+  margin: auto;
+}
+
+.col .col2 .imagen {
+  height: 100%;
+}
+
+.col .col2 .cube1 {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.funciones {
+  width: 100%;
+  display: flex;
+}
+
+.funciones .col1 {
+  width: 33.3%;
+  height: 100%;
+}
+
+.funciones .col1 .glide {
+  background-image: url(img/glide.png);
+  background-size: contain;
+  background-position: center;
+  background-color: #C1C1C1;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col1 .overlayU {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #C1C1C1;
+}
+
+.funciones .col1 .glide:hover .overlayU {
+  opacity: 0.9;
+}
+
+.funciones .col1 .spin {
+  background-image: url(img/spin.png);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col1 .overlayD {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #B83664;
+}
+
+.funciones .col1 .spin:hover .overlayD {
+  opacity: 0.9;
+}
+
+.funciones .col2 {
+  width: 33.3%;
+  height: 100%;
+}
+
+.funciones .col2 .breath {
+  background-image: url(img/breath.png);
+  background-size: 435px;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col2 .overlayT {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #82BB57;
+}
+
+.funciones .col2 .breath:hover .overlayT {
+  opacity: 0.9;
+}
+
+.funciones .col2 .click {
+  background-image: url(img/click.png);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col2 .overlayC {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #F8CA5F;
+}
+
+.funciones .col2 .click:hover .overlayC {
+  opacity: 0.9;
+}
+
+.funciones .col3 {
+  width: 33.3%;
+  height: 100%;
+}
+
+.funciones .col3 .roll {
+  background-image: url(img/roll.png);
+  background-size: contain;
+  background-position: center;
+  background-color: #71CAFB;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col3 .overlayF {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #71CAFB;
+}
+
+.funciones .col3 .roll:hover .overlayF {
+  opacity: 0.9;
+}
+
+.funciones .col3 .flip {
+  background-image: url(img/flip.png);
+  background-size: contain;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+}
+
+.funciones .col3 .overlayS {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4D4D4D;
+}
+
+.funciones .col3 .flip:hover .overlayS {
+  opacity: 0.9;
+}
+
+.funciones .text {
+  font: 30px "Open Sans Condensed", sans-serif;
+  width: 50%;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding-top: 100px;
+  opacity: 1;
+}
+
+.why .porque {
+  margin-left: 170px;
+  margin-top: 100px;
+}
+
+.why .porque h1 {
+  width: 30%;
+  text-align: right;
+  margin-bottom: 20px;
+  font: 30px "Roboto", sans-serif;
+}
+
+.why .porque p {
+  width: 30%;
+  text-align: justify;
+  font: 20px "Open Sans Condensed", sans-serif;
+}
+
+.imagenes {
+  position: relative;
+  top: -150px;
+}
+
+.interaccion {
+  width: 100%;
+  height: 750px;
+  background-color: #29ABE2;
+  position: relative;
+  top: -320px;
+}
+
+.interaccion h1 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  color: white;
+  font: 30px "Roboto", sans-serif;
+}
+
+.interaccion .conjunto {
+  width: 80%;
+  height: 60%;
+  display: flex;
+  margin: auto;
+}
+
+.interaccion .conjunto .cuboP {
+  text-align: center;
+  width: 60%;
+  transition: transform .5s;
+  background-image: url(img/cuboBA.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity .5s;
+}
+
+.interaccion .conjunto .cuboP .cubo2 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/cuboBAM.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.interaccion .conjunto .cuboP .cubo2 .cubo3 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/cuboBV.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.interaccion .conjunto .cuboP .cubo2 .cubo3 .cubo4 {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity .5s;
+  background-image: url(img/cuboBR.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.interaccion .conjunto .cuboP .cubo4:hover {
+  opacity: 0;
+}
+
+.interaccion .conjunto .cuboP .cubo3:hover {
+  opacity: 0;
+}
+
+.interaccion .conjunto .cuboP .cubo2:hover {
+  opacity: 0;
+}
+
+.interaccion .conjunto .cuboP .body {
+  width: 20%;
+}
+
+.interaccion .conjunto .cuboP .body h1 {
+  font: 30px "Roboto", sans-serif;
+  text-align: left;
+}
+
+.interaccion .conjunto .cuboP .body .cir1 {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.interaccion .conjunto .cuboP .body .cir2 {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: black;
+}
+
+.interaccion .conjunto .cuboP .buttons {
+  width: 20%;
+  text-align: center;
+}
+
+.interaccion .conjunto .cuboP .buttons h1 {
+  font: 30px "Roboto", sans-serif;
+  text-align: center;
+}
+
+.interaccion .conjunto .cuboP .buttons .cambio {
+  display: inline-flex;
+}
+
+.interaccion .conjunto .cuboP .buttons .cambio .fucsia {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #B83664;
+  margin: 20px;
+}
+
+.interaccion .conjunto .cuboP .buttons .cambio .azul {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #71CAFB;
+  margin: 20px;
+}
+
+.interaccion .conjunto .cuboP .buttons .cambio .verde {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #82BB57;
+  margin: 20px;
+}
+
+.interaccion .conjunto .cuboP .buttons .cambio .amarillo {
+  width: 45px;
+  height: 45px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  background: #F8CA5F;
+  margin: 20px;
+}
+
+.interaccion .conjunto .botonC {
+  height: 10%;
+  margin: auto;
+  text-align: center;
+}
+
+.interaccion .conjunto .botonC .comprar {
+  width: 150px;
+  height: 60px;
+  background-color: #00DCBC;
+  background-image: url(img/botoncompra.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 0;
+  border-radius: 6px;
+  padding-top: 10px;
+}
+
+.interaccion .caracteristicas {
+  position: relative;
+  top: -320px;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/cuadroscara.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 500px;
+}
+
+.interaccion .caracteristicas .cubocar {
+  width: 20%;
+  float: left;
+  margin-top: 100px;
+}
+
+.interaccion .caracteristicas .info {
+  width: 80%;
+  text-align: center;
+}
+
+.interaccion .caracteristicas .info h1 {
+  font: 30px "Roboto", sans-serif;
+  text-align: center;
+  padding-top: 130px;
+}
+
+.interaccion .caracteristicas .info p {
+  font: 20px "Open Sans Condensed", sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.interaccion .caracteristicas .contacto {
+  text-align: right;
+  margin-right: 380px;
+  margin-top: 195px;
+}
+
+.interaccion .caracteristicas .contacto h2 {
+  top: -375px;
+  left: 290px;
+  margin-bottom: 20px;
+  font: 30px "Roboto", sans-serif;
+}
+
+.interaccion .caracteristicas .contacto .contact .em {
+  border-color: #00DCBC;
+  background-color: transparent;
+}
+
+.interaccion .caracteristicas .contacto .contact .btn {
+  background-color: #00DCBC;
+  padding: 10px;
+}
+
+.interaccion .promo {
+  position: relative;
+  top: -320px;
+  background-color: #82BB57;
+}
+
+.interaccion .promo img {
+  margin-left: 150px;
+}
+
+.interaccion .promo .only {
+  width: 100%;
+  height: 30%;
+}
+
+.interaccion .promo .only img {
+  margin-top: 35px;
+  position: relative;
+  float: right;
+  right: 300px;
+}
+
+.interaccion .footer {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  top: -320px;
+  background: #DDDD;
+}
+
+.interaccion .footer .logo {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+}
+
+.interaccion .footer .redes {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.interaccion .footer .redes a {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=estilos.css.map */
